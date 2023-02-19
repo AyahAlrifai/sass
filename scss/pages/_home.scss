@@ -1,0 +1,37 @@
+.logo-box {
+    top: 2.5rem;
+    left: 2.5rem;
+    position: absolute;
+
+    .logo {
+        height: 2.18rem;
+    }
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-5%, -40%);
+    text-align: center;
+}
+
+.grid-test {
+    margin-top: 2rem;
+}
+
+.section-about {
+    background-color: $gray_color_1;
+    padding: 5rem 5rem;
+    padding-top: 10rem;
+    margin-top: -20vh;
+
+}
+
+.section-features {
+    padding: 15rem 3rem;
+    background-image: linear-gradient(to right bottom, $blue_1, $blue_2, $blue_3), url($third_panel_bg);
+    clip-path: polygon(0 15vh, 100% 0, 100% 85vh, 0 100vh);
+
+    transform: skewY(5deg);
+}

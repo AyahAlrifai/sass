@@ -1,0 +1,16 @@
+@import "../abstract/variables";
+
+body {
+    font-family: $font_family;
+    font-size: $font_size;
+    line-height: $line_height;
+    font-weight: $font_weight;
+    color: $gray_color;
+    padding: 1.8rem;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}

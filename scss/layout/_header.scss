@@ -1,0 +1,10 @@
+@import "../abstract/variables";
+
+.header {
+    height: 95vh;
+    position: relative;
+    background-image: linear-gradient(to right bottom, $blue_1, $blue_2, $blue_3), url($first_panel_bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+}

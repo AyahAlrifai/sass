@@ -1,0 +1,37 @@
+@import "../base/animations";
+
+.btn {
+
+    &:visited,
+    &:link {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        display: inline-block;
+        transition: all .2s;
+        border-radius: 1.6rem;
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0rem 1.6rem 1.25rem $gray_shadow_color;
+    }
+
+    &:active {
+        transform: translateY(-0.06rem);
+        box-shadow: 0rem 0.3rem 1.6rem $gray_shadow_color;
+
+    }
+
+    &.white-btn {
+        background-color: $white_color;
+        color: #777;
+        font-size: 1rem;
+    }
+
+    &.btn-animation {
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    }
+
+}
