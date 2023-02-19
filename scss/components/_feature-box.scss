@@ -12,7 +12,7 @@
     &__icon {
         font-size: 3rem;
         margin-bottom: 0.5rem;
-        background-image: linear-gradient(to right, $blue_3, $blue_2, $blue_1);
+        background-image: linear-gradient(to right, rgba($blue_1,0.5),rgba($blue_2,0.5),rgba($blue_3,0.5));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;

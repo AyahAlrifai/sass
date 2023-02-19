@@ -30,8 +30,15 @@
 
 .section-features {
     padding: 15rem 3rem;
-    background-image: linear-gradient(to right bottom, $blue_1, $blue_2, $blue_3), url($third_panel_bg);
+    background-image: linear-gradient(to right bottom, rgba($blue_1,0.5), rgba($blue_2,0.5), rgba($blue_3,0.5)), url($third_panel_bg);
     clip-path: polygon(0 15vh, 100% 0, 100% 85vh, 0 100vh);
 
     transform: skewY(5deg);
+}
+
+.section-tours {
+    background-color: $gray_color_1;
+    padding: 5rem 15rem;
+    margin-top: -20vh;
+    height: 100vh;
 }

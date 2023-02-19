@@ -16,16 +16,16 @@
 }
 
 .headering-secondary {
-    font-size: 3.5rem;
+    font-size:2.5rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $blue_1, $blue_2, $blue_3);
+    background-image: linear-gradient(to right, rgba($blue_1,1),rgba($blue_2,1),rgba($blue_3,1));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
-    transition: all .2s;
+    transition: all .4s;
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

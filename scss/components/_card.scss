@@ -1,0 +1,79 @@
+.card {
+    padding: 3rem;
+    perspective: 120rem;
+    -moz-perspective: 120rem;
+    position: relative;
+    height: 30rem;
+
+    &__side {
+        height: 30rem;
+        transition: all 1.5s ease-in-out;
+        color: $white_color;
+        font-size: $default-font-size;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        box-shadow: 0 1.5rem 2rem $gray_shadow_color;
+        overflow: hidden;
+
+        &--front {
+            background-image: $white_color;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom,$orange_1,$orange_2);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom,$green_1,$green_2);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom,$blue_1,$blue_2);
+            }
+            
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    .card__pic {
+
+        height: 15rem;
+        background-size: cover;
+        clip-path: polygon(0 0 , 100% 0 ,100% 85%, 0 100%);
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($orange_1,0.5),rgba($orange_2,0.5)), url($card_image_1);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($green_1,0.5),rgba($green_2,0.5)), url($card_image_2);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($blue_1,0.5),rgba($blue_2,0.5)), url($card_image_3);
+        }
+    }
+
+    .card__heading {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .card__details {
+
+    }
+}
