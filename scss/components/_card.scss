@@ -1,5 +1,5 @@
 .card {
-    padding: 3rem;
+    padding: 2rem;
     perspective: 120rem;
     -moz-perspective: 120rem;
     position: relative;
@@ -27,17 +27,17 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom,$orange_1,$orange_2);
+                background-image: linear-gradient(to right bottom, $orange_1, $orange_2);
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom,$green_1,$green_2);
+                background-image: linear-gradient(to right bottom, $green_1, $green_2);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom,$blue_1,$blue_2);
+                background-image: linear-gradient(to right bottom, $blue_1, $blue_2);
             }
-            
+
         }
     }
 
@@ -53,27 +53,98 @@
 
         height: 15rem;
         background-size: cover;
-        clip-path: polygon(0 0 , 100% 0 ,100% 85%, 0 100%);
-        
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($orange_1,0.5),rgba($orange_2,0.5)), url($card_image_1);
+            background-image: linear-gradient(to right bottom, rgba($orange_1, 0.5), rgba($orange_2, 0.5)), url($card_image_1);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($green_1,0.5),rgba($green_2,0.5)), url($card_image_2);
+            background-image: linear-gradient(to right bottom, rgba($green_1, 0.5), rgba($green_2, 0.5)), url($card_image_2);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($blue_1,0.5),rgba($blue_2,0.5)), url($card_image_3);
+            background-image: linear-gradient(to right bottom, rgba($blue_1, 0.5), rgba($blue_2, 0.5)), url($card_image_3);
         }
     }
 
     .card__heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 400;
+        text-transform: uppercase;
+        color: $white_color;
+        position: absolute;
+        top: 10rem;
+        right: 1.5rem;
+        text-align: right;
+    }
+
+    &-heading-span {
+        padding: 0.5rem 1.5rem;
+        margin: 0.5rem;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($orange_1, 0.95), rgba($orange_2, 0.95));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($green_1, 0.95), rgba($green_2, 0.95));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($blue_1, 0.95), rgba($blue_2, 0.95));
+        }
     }
 
     .card__details {
+        color: $black_color;
 
+        ul {
+            list-style: none;
+            width: 90%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1rem;
+                padding: 0.25rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $gray_color_2;
+                }
+
+                &:hover {
+                    background-color: $gray_color_2;
+                }
+            }
+        }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
