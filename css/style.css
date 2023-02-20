@@ -453,23 +453,29 @@ body {
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
+
 .card:hover .card__side--back {
   transform: rotateY(0deg);
 }
+
 .card .card__pic {
   height: 15rem;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
+
 .card .card__pic--1 {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.5), rgba(255, 119, 48, 0.5)), url("../img/nat-6.jpg");
 }
+
 .card .card__pic--2 {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url("../img/nat-7.jpg");
 }
+
 .card .card__pic--3 {
   background-image: linear-gradient(to right bottom, rgba(109, 182, 246, 0.5), rgba(31, 151, 250, 0.5)), url("../img/nat-5.jpg");
 }
+
 .card .card__heading {
   font-size: 1.5rem;
   font-weight: 400;
@@ -480,39 +486,49 @@ body {
   right: 1.5rem;
   text-align: right;
 }
+
 .card-heading-span {
   padding: 0.5rem 1.5rem;
   margin: 0.5rem;
   box-decoration-break: clone;
 }
+
 .card-heading-span--1 {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.95), rgba(255, 119, 48, 0.95));
 }
+
 .card-heading-span--2 {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.95), rgba(40, 180, 133, 0.95));
 }
+
 .card-heading-span--3 {
   background-image: linear-gradient(to right bottom, rgba(109, 182, 246, 0.95), rgba(31, 151, 250, 0.95));
 }
+
 .card .card__details {
   color: #000000;
 }
+
 .card .card__details ul {
   list-style: none;
   width: 90%;
   margin: 0 auto;
 }
+
 .card .card__details ul li {
   text-align: center;
   font-size: 1rem;
   padding: 0.25rem;
 }
+
 .card .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #d2d1d1;
 }
+
 .card .card__details ul li:hover {
   background-color: #d2d1d1;
 }
+
 .card__cta {
   position: absolute;
   top: 50%;
@@ -524,14 +540,17 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .card__price-box {
   text-align: center;
   margin-bottom: 8rem;
 }
+
 .card__price-only {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
+
 .card__price-value {
   font-size: 6rem;
   font-weight: 100;
@@ -548,6 +567,7 @@ body {
   padding-left: 9rem;
   transform: skewX(12deg);
 }
+
 .story__shape {
   width: 12rem;
   height: 12rem;
@@ -557,13 +577,16 @@ body {
   transform: translateX(-3rem) skewX(-12deg);
   position: relative;
 }
+
 .story__img {
   width: 100%;
   height: 100%;
 }
+
 .story__text {
   transform: skewX(-12deg);
 }
+
 .story__caption {
   position: absolute;
   top: 50%;
@@ -577,10 +600,12 @@ body {
   opacity: 0;
   transition: all 0.5s;
 }
+
 .story:hover .story__caption {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
+
 .story:hover .story__img {
   filter: blur(0.5rem);
   -webkit-filter: blur(0.5rem);
@@ -596,6 +621,7 @@ body {
   opacity: 0.2;
   overflow: hidden;
 }
+
 .bg-video__content {
   height: 100%;
   width: 100%;
