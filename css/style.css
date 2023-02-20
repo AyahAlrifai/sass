@@ -165,6 +165,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.u-margin-top-huge {
+  margin-top: 5rem;
+}
+
 .logo-box {
   top: 2.5rem;
   left: 2.5rem;
@@ -204,7 +208,7 @@ body {
   background-color: #f7f7f7;
   padding: 5rem 10rem;
   margin-top: -20vh;
-  height: 100vh;
+  height: auto;
 }
 
 .header {
@@ -311,6 +315,11 @@ body {
 .btn.white-btn {
   background-color: #ffffff;
   color: #777;
+  font-size: 1rem;
+}
+.btn.blue-btn {
+  background-color: #06a9f4;
+  color: #ffffff;
   font-size: 1rem;
 }
 .btn.btn-animation {
