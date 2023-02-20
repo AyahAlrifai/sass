@@ -42,3 +42,10 @@
     margin-top: -20vh;
     height: auto;
 }
+
+.section-stories {
+    height: auto;
+    padding: 10rem 0rem;
+    background-color: $white_color;
+    // background-image: linear-gradient(to right bottom, rgba($blue_1,0.2), rgba($blue_2,0.2), rgba($blue_3,0.2)), url($third_panel_bg);;
+}
