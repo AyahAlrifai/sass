@@ -63,10 +63,10 @@
 
 .book {
     background-image: linear-gradient(105deg, 
-                                    rgba($white_color, .7) 0%,
-                                    rgba($white_color, .7) 50%,
+                                    rgba($white_color, .8) 0%,
+                                    rgba($white_color, .8) 50%,
                                     transparent 50%) ,
-                            url(../../img/nat-10.jpg);
+                            url($book_image);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($black_color, .2);

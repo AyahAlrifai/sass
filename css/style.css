@@ -225,7 +225,7 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/nat-10.jpg");
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -326,7 +326,7 @@ body {
   transform: rotate(4deg) scale(1);
 }
 .footer__copyright {
-  border-top: 1px solid #777777;
+  border-top: 1px solid #f7f7f7;
   padding-top: 2rem;
   width: 80%;
   float: right;
